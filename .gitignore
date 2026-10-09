@@ -1,0 +1,7 @@
+*.o
+*.d
+*.elf
+EBOOT.PBP
+PARAM.SFO
+psp-package/
+.DS_Store
