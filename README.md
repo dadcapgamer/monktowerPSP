@@ -6,7 +6,7 @@ Native PSP adaptation of Maciej Główka's MIT-licensed coffee-break roguelike
 `assets/` are the upstream originals; the game itself is rewritten in C for the
 PSP.
 
-## Release Candidate 1
+## Release Candidate 2
 
 - Original 8 x 8 board scale and original PNG sprite atlases
 - Procedural rooms, walls, doors, stairs, items and enemies

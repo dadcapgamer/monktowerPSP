@@ -36,7 +36,7 @@ LIBS = -lSDL2_image -lSDL2 -lpng -lz -ljpeg -lm \
 LDFLAGS =
 
 EXTRA_TARGETS = EBOOT.PBP
-PSP_EBOOT_TITLE = Monk Tower PSP - Release Candidate 1
+PSP_EBOOT_TITLE = Monk Tower PSP - Release Candidate 2
 
 # XMB art, exported from the "monktower" page of the Art 4 Ports Figma file.
 # ICON0 is the 144x80 game-list thumbnail, PIC1 the 480x272 full-screen

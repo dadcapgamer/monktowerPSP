@@ -16,7 +16,11 @@
 // Without this the module inherits SDL2's fallback and reports itself as
 // "SDL App" to the firmware, CFW tools and crash dumps.
 PSP_MODULE_INFO("Monk Tower", 0, 1, 0);
-PSP_MAIN_THREAD_ATTR(PSP_THREAD_ATTR_USER);
+/* VFPU access is required: SDL's PSP renderer uses VFPU instructions on every
+   texture draw (MathAbs in SDL_render_psp.c), and a thread without this flag
+   takes a CPU exception on real hardware -- the PSP goes black and powers off.
+   PPSSPP does not enforce it. */
+PSP_MAIN_THREAD_ATTR(PSP_THREAD_ATTR_USER | PSP_THREAD_ATTR_VFPU);
 
 #define SCREEN_W 480
 #define SCREEN_H 272
